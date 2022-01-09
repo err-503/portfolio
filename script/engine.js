@@ -10,7 +10,7 @@ if(localStorage.getItem('darkmodestatus') == 'false'){
 function darkmodetoggle(){
     if(localStorage.getItem('darkmodestatus') == 'false'){
         if(mute == "false"){
-            let audio = new Audio("./assets/audio/click" + (Math.floor(Math.random() * 7) + 1) + ".mp3");
+            let audio = new Audio("/portfolio/assets/audio/click" + (Math.floor(Math.random() * 7) + 1) + ".mp3");
             audio.load();
             audio.play();
         }
@@ -18,7 +18,7 @@ function darkmodetoggle(){
         localStorage.setItem('darkmodestatus', 'true');
     } else {
         if(mute == "false"){
-            let audio = new Audio("./assets/audio/click" + (Math.floor(Math.random() * 7) + 1) + ".mp3");
+            let audio = new Audio("/portfolio/assets/audio/click" + (Math.floor(Math.random() * 7) + 1) + ".mp3");
             audio.load();
             audio.play();
         }
@@ -28,8 +28,8 @@ function darkmodetoggle(){
 }
 
 function soundeffects(){
-    let audio1 = new Audio("./assets/audio/soundon" + (Math.floor(Math.random() * 2) + 1) + ".mp3");
-    let audio2 = new Audio("./assets/audio/soundoff" + (Math.floor(Math.random() * 2) + 1) + ".mp3");
+    let audio1 = new Audio("/portfolio/assets/audio/soundon" + (Math.floor(Math.random() * 2) + 1) + ".mp3");
+    let audio2 = new Audio("/portfolio/assets/audio/soundoff" + (Math.floor(Math.random() * 2) + 1) + ".mp3");
     let ond = document.getElementById("sound-on");
     let offd = document.getElementById("sound-off");
     let onm = document.getElementById("sound-on-mobile");
@@ -64,7 +64,7 @@ function mobilenavtoggle(){
     let window = document.getElementById("mobile_portal");
     let ham1 = document.getElementById("mobile_hamburger_close");
     let ham2 = document.getElementById("mobile_hamburger_open")
-    let audio3 = new Audio("./assets/audio/menu" + (Math.floor(Math.random() * 4) + 1) + ".mp3")
+    let audio3 = new Audio("/portfolio/assets/audio/menu" + (Math.floor(Math.random() * 4) + 1) + ".mp3")
     switch(window.style.display){
         case 'none':
             window.style.display = "block";
